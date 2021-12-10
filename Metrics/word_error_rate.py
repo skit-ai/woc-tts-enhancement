@@ -17,20 +17,20 @@ def levenshteinDistance(ref, hyp):
             if ref[i-1] == hyp[j-1]:
                 dp[i][j] = dp[i-1][j-1]
             else:
-                subs  = dp[i-1][j-1] + 1
-                ins = dp[i][j-1]   + 1
+                subs = dp[i-1][j-1] + 1
+                ins  = dp[i][j-1]   + 1
                 delt = dp[i-1][j]   + 1
                 dp[i][j] = min(subs, ins, delt)
     return dp
 
 def wer(ref, hyp):
-    """
+    '''
     This calculates the word error rate given the reference and the hypothesis sentences.
     Returns the rate in percentage.
     Usage:
-        >wer("Hi I love apples".split(), "Hi I love oranges".split())
+        >>>wer("Hi I love apples".split(), "Hi I love oranges".split())
         25.0
-    """
+    '''
     # build the matrix for levenshteinDistance
     dp = levenshteinDistance(ref, hyp)
     rate = float(dp[len(ref)][len(hyp)]) / len(ref) * 100

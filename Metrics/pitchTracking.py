@@ -163,8 +163,8 @@ class Pitch:
 
 
 if __name__ == "__main__":
-    path = '/root/shangeth/ModularTTS/audio_samples/b-3_2350-2433_2379.wav'
+    path = "../Testset/clean/sp01.wav"
     y, sr = torchaudio.load(path)
 
     pitch = Pitch(sr)
-    pitch.plot_f0(y, save_path='/root/shangeth/ModularTTS/audio_samples/foo.png')
+    pitch.plot_f0(y, save_path='../docs/foo.png')

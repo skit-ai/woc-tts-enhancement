@@ -2,7 +2,7 @@ import numpy as np
 import torch
 import torchaudio
 
-from modulartts.metrics.pitchTracking import Pitch
+from pitchTracking import Pitch
 
 class VDE(torch.nn.Module):
     def __init__(self, sr=16000):
@@ -46,7 +46,7 @@ class VDE(torch.nn.Module):
     
 
 if __name__ == "__main__":
-    path1 = '/root/shangeth/ModularTTS/audio_samples/b-3_2350-2433_2379.wav'
+    path1 = "../Testset/clean/sp01.wav"
     # path2 = '/root/shangeth/ModularTTS/audio_samples/b-4_1601-1706_1703.wav'
 
     vde = VDE(22050)

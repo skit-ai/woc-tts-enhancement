@@ -57,7 +57,7 @@ class FFE:
         return voiced_frames & pitch_error_frames
 
 if __name__ == "__main__":
-    # path1 = '/root/shangeth/ModularTTS/audio_samples/b-3_2350-2433_2379.wav'
+    path1 = "../Testset/clean/sp01.wav"
     # path2 = '/root/shangeth/ModularTTS/audio_samples/b-4_1601-1706_1703.wav'
 
     ffe = FFE(22050)

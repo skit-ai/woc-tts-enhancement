@@ -2,7 +2,7 @@ import numpy as np
 import torch
 import torchaudio
 
-from modulartts.metrics.pitchTracking import Pitch
+from pitchTracking import Pitch
 
 class GPE:
     def __init__(self, sr=16000):
@@ -57,11 +57,11 @@ class GPE:
         return voiced_frames & pitch_error_frames
 
 if __name__ == "__main__":
-    path1 = '/root/shangeth/ModularTTS/audio_samples/b-3_2350-2433_2379.wav'
-    # path2 = '/root/shangeth/ModularTTS/audio_samples/b-4_1601-1706_1703.wav'
+    path1 = "../Testset/clean/sp01.wav"
+    #path2 = "../Testset/noisy/babble/sp01_babble_sn10.wav"
 
     gpe = GPE(22050)
-    # print(gpe.calculate_gpe_path(path1, path2))
+    #print(gpe.calculate_gpe_path(path1, path2))
 
     y_ref, sr_ref = torchaudio.load(path1)
     y_syn = y_ref + torch.randn(y_ref.size()) * 0.08

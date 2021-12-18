@@ -1,3 +1,5 @@
 ## TestSet
 
-This testset is created by sampling from the different background noises with babbles, trains, cars etc and varying SNR ratios(5, 10, 15 or 20) from the [NOIZEUS](https://ecs.utdallas.edu/loizou/speech/noizeus/) dataset. This testset contains 102 such speech samples and can be used to test out the different menthods of noise reduction.
+This testset is created by sampling from the [NOIZEUS](https://ecs.utdallas.edu/loizou/speech/noizeus/) dataset. The noisy database contains 30 IEEE sentences (produced by three male and three female speakers) corrupted by eight different real-world noises at different SNRs. The noise includes suburban train noise, babble, car, exhibition hall, restaurant, street, airport and train-station noise. Our testset is created by randomly sampling from the distorted speech samples and keeping the clean speeches intact.
+
+The clean subdirectory has 30 files while the noisy subdirectory contains 102 files which can be used to test out the different methods of noise reduction.

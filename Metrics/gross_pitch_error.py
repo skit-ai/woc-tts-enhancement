@@ -58,13 +58,13 @@ class GPE:
 
 if __name__ == "__main__":
     path1 = "../Testset/clean/sp01.wav"
-    #path2 = "../Testset/noisy/babble/sp01_babble_sn10.wav"
+    path2 = "../Testset/noisy/babble/sp01_babble_sn10.wav"
 
     gpe = GPE(22050)
-    #print(gpe.calculate_gpe_path(path1, path2))
+    print(gpe.calculate_gpe_path(path1, path2))
 
     y_ref, sr_ref = torchaudio.load(path1)
-    y_syn = y_ref + torch.randn(y_ref.size()) * 0.08
+    y_syn, sr_syn = torchaudio.load(path2)
 
     print(y_ref.size(), y_syn.size())
     print(gpe.calculate_gpe(y_ref, y_syn))

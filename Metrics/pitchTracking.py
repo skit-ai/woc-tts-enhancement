@@ -165,6 +165,5 @@ class Pitch:
 if __name__ == "__main__":
     path = "../Testset/clean/sp01.wav"
     y, sr = torchaudio.load(path)
-
     pitch = Pitch(sr)
-    pitch.plot_f0(y, save_path='../docs/foo.png')
+    pitch.plot_f0(y, save_path='../docs/examples/foo.png')

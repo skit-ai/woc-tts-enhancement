@@ -161,13 +161,11 @@ class MSD:
 
 if __name__ == "__main__":
     path1 = "../Testset/clean/sp01.wav"
-    # path2 = '/root/shangeth/ModularTTS/audio_samples/b-4_1601-1706_1703.wav'
+    path2 = "../Testset/noisy/babble/sp01_babble_sn10.wav"
 
     msd = MSD(22050)
-    # print(gpe.calculate_gpe_path(path1, path2))
 
     y_ref, sr_ref = torchaudio.load(path1)
-    y_syn = y_ref + torch.randn(y_ref.size())
+    y_syn, sr_syn = torchaudio.load(path2)
 
-    # print(y_ref.size(), y_syn.size())
     print(msd.calculate_msd(y_ref, y_ref))

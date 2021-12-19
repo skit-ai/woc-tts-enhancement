@@ -11,7 +11,7 @@ These are some of the metrics implemented in this repository as well as tested o
 >>>y_syn, sr_syn = torchaudio.load(path2)
 ```
 
-### F0 Frame Error Rate (FER)
+### F0 Frame Error Rate (FFE)
 
 ```python
 >>>from Metrics.f0_frame_error import FFE

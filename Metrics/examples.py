@@ -10,8 +10,8 @@ from msd import MSD
 from pystoi import stoi
 from pesq import pesq
 
-path1 = "../Testset/clean/sp01.wav"
-path2 = "../Testset/noisy/babble/sp01_babble_sn10.wav"
+path1 = "../Testset/clean/sp15.wav"
+path2 = "../Testset/noisy/station/sp15_station_sn5.wav"
 
 y_ref, sr_ref = torchaudio.load(path1)
 y_syn, sr_syn = torchaudio.load(path2) 
@@ -25,10 +25,10 @@ gpe = GPE(22050)
 print("Gross Pitch Error (GPE): " + str(gpe.calculate_gpe(y_ref, y_syn)))
 
 mcd = MCD(22050)
-print(mcd.calculate_mcd(y_ref, y_syn))
+print("MCD: " + str(mcd.calculate_mcd(y_ref, y_syn)))
 
 mcd2 = MCDMetric(22050)
-print(mcd2(y_ref, y_syn))
+print("MCD2: " + str(mcd2(y_ref, y_syn)))
 
 msd = MSD(22050)
 print("MSD: "+ str(msd.calculate_msd(y_ref, y_syn)))

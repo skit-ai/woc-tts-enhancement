@@ -168,4 +168,4 @@ if __name__ == "__main__":
     y_ref, sr_ref = torchaudio.load(path1)
     y_syn, sr_syn = torchaudio.load(path2)
 
-    print(msd.calculate_msd(y_ref, y_ref))
+    print(msd.calculate_msd(y_ref, y_syn))

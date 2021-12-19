@@ -5,4 +5,4 @@ from Metrics.f0_frame_error import FFE
 from Metrics.voicing_decision_error import VDE
 from Metrics.gross_pitch_error import GPE
 from Metrics.pitchTracking import Pitch
-from Metrics.word_error_rate import wer
+from Metrics.word_error_rate import WER

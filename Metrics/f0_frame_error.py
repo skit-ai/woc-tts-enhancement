@@ -2,7 +2,7 @@ import numpy as np
 import torch
 import torchaudio
 
-from modulartts.metrics.pitchTracking import Pitch
+from pitchTracking import Pitch
 
 class FFE:
     def __init__(self, sr=16000):

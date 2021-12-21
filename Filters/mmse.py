@@ -14,24 +14,6 @@ class MMSE:
         self.Thres = Thres
         self.mu = mu
         self.ksi_min = ksi_min
-
-    def Normalize_01(self, x):
-        # normalize to -1.0 -- 1.0
-        if x.dtype == 'int16':
-            nb_bits = 16  # -> 16-bit wav files
-        elif x.dtype == 'int32':
-            nb_bits = 32  # -> 32-bit wav files
-        max_nb_bit = float(2 ** (nb_bits - 1))
-        return (x / (max_nb_bit + 1))
-    
-    def Denormalize_01(self, x):
-        # denormalize from -1.0 -- 1.0 
-        if x.dtype == 'int16':
-            nb_bits = 16  # -> 16-bit wav files
-        elif x.dtype == 'int32':
-            nb_bits = 32  # -> 32-bit wav files
-        max_nb_bit = float(2 ** (nb_bits - 1))
-        return (x * (max_nb_bit + 1))
     
     def ApplyMMSE_path(self, path1, path2):
         # Implemented with the help of https://github.com/vipchengrui/traditional-speech-enhancement/blob/master/mmse/mmse.py

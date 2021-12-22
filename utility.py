@@ -169,27 +169,75 @@ def denormalize_01(x):
     return (x * (max_nb_bit + 1))
 
 if __name__ == "__main__":
-    waveform, sample_rate = torchaudio.load("docs/audio/sp15.wav")
+    #waveform, sample_rate = torchaudio.load("docs/audio/sp15.wav")
     #print_stats(waveform, sample_rate=sample_rate)
-    plot_waveform(waveform, sample_rate, "docs/images/clean_audio_waveform.png")
-    plot_specgram(waveform, sample_rate, "docs/images/clean_audio_spectrogram.png")
+    #plot_waveform(waveform, sample_rate, "docs/images/clean_audio_waveform.png")
+    #plot_specgram(waveform, sample_rate, "docs/images/clean_audio_spectrogram.png")
 
-    waveform, sample_rate = torchaudio.load("docs/audio/sp15_station_sn5.wav")
-    plot_waveform(waveform, sample_rate, "docs/images/noisy_audio_waveform.png")
-    plot_specgram(waveform, sample_rate, "docs/images/noisy_audio_spectrogram.png")
+    #waveform, sample_rate = torchaudio.load("docs/audio/sp15_station_sn5.wav")
+    #plot_waveform(waveform, sample_rate, "docs/images/noisy_audio_waveform.png")
+    #plot_specgram(waveform, sample_rate, "docs/images/noisy_audio_spectrogram.png")
 
-    waveform, sample_rate = torchaudio.load("docs/audio/wiener_filtered_sp15_station_sn5.wav")
-    plot_waveform(waveform, sample_rate, "docs/images/wiener_filtered_audio_waveform.png")
-    plot_specgram(waveform, sample_rate, "docs/images/wiener_filtered_spectrogram.png")
+    #waveform, sample_rate = torchaudio.load("docs/audio/wiener_filtered_sp15_station_sn5.wav")
+    #plot_waveform(waveform, sample_rate, "docs/images/wiener_filtered_audio_waveform.png")
+    #plot_specgram(waveform, sample_rate, "docs/images/wiener_filtered_spectrogram.png")
 
-    waveform, sample_rate = torchaudio.load("docs/audio/ss_filtered_sp15_station_sn5.wav")
-    plot_waveform(waveform, sample_rate, "docs/images/ss_filtered_audio_waveform.png")
-    plot_specgram(waveform, sample_rate, "docs/images/ss_filtered_spectrogram.png")
+    #waveform, sample_rate = torchaudio.load("docs/audio/ss_filtered_sp15_station_sn5.wav")
+    #plot_waveform(waveform, sample_rate, "docs/images/ss_filtered_audio_waveform.png")
+    #plot_specgram(waveform, sample_rate, "docs/images/ss_filtered_spectrogram.png")
     
-    waveform, sample_rate = torchaudio.load("docs/audio/MMSE_filtered_sp15_station_sn5.wav")
-    plot_waveform(waveform, sample_rate, "docs/images/mmse_filtered_audio_waveform.png")
-    plot_specgram(waveform, sample_rate, "docs/images/mmse_filtered_spectrogram.png")
+    #waveform, sample_rate = torchaudio.load("docs/audio/MMSE_filtered_sp15_station_sn5.wav")
+    #plot_waveform(waveform, sample_rate, "docs/images/mmse_filtered_audio_waveform.png")
+    #plot_specgram(waveform, sample_rate, "docs/images/mmse_filtered_spectrogram.png")
     
-    waveform, sample_rate = torchaudio.load("docs/audio/MMSE_Log_filtered_sp15_station_sn5.wav")
-    plot_waveform(waveform, sample_rate, "docs/images/mmse_log_filtered_audio_waveform.png")
-    plot_specgram(waveform, sample_rate, "docs/images/mmse_log_filtered_spectrogram.png")
+    #waveform, sample_rate = torchaudio.load("docs/audio/MMSE_Log_filtered_sp15_station_sn5.wav")
+    #plot_waveform(waveform, sample_rate, "docs/images/mmse_log_filtered_audio_waveform.png")
+    #plot_specgram(waveform, sample_rate, "docs/images/mmse_log_filtered_spectrogram.png")
+
+    #waveform, sample_rate = torchaudio.load("Testset/noise/car_0dB/sp05_car_sn0.wav")
+    #plot_waveform(waveform, sample_rate, "docs/images/Testset/waveform_sp05_car_sn0.png")
+    #plot_specgram(waveform, sample_rate, "docs/images/Testset/spec_sp05_car_sn0.png")
+
+    #waveform, sample_rate = torchaudio.load("Testset/clean/sp05.wav")
+    #plot_waveform(waveform, sample_rate, "docs/images/Testset/clean_waveform_sp05.png")
+    #plot_specgram(waveform, sample_rate, "docs/images/Testset/clean_spec_sp05.png")
+
+    #waveform, sample_rate = torchaudio.load("Testset/noise/babble_0dB/sp05_babble_sn0.wav")
+    #plot_waveform(waveform, sample_rate, "docs/images/Testset/waveform_sp05_babble_sn0.png")
+    #plot_specgram(waveform, sample_rate, "docs/images/Testset/spec_sp05_babble_sn0.png")
+
+    #waveform, sample_rate = torchaudio.load("Testset/noise/exhibition_0dB/sp05_exhibition_sn0.wav")
+    #plot_waveform(waveform, sample_rate, "docs/images/Testset/waveform_sp05_exhibition_sn0.png")
+    #plot_specgram(waveform, sample_rate, "docs/images/Testset/spec_sp05_exhibition_sn0.png")
+
+    #waveform, sample_rate = torchaudio.load("Testset/noise/restaurant_0dB/sp05_restaurant_sn0.wav")
+    #plot_waveform(waveform, sample_rate, "docs/images/Testset/waveform_sp05_restaurant_sn0.png")
+    #plot_specgram(waveform, sample_rate, "docs/images/Testset/spec_sp05_restaurant_sn0.png")
+
+    #waveform, sample_rate = torchaudio.load("Testset/noise/station_0dB/sp05_station_sn0.wav")
+    #plot_waveform(waveform, sample_rate, "docs/images/Testset/waveform_sp05_station_sn0.png")
+    #plot_specgram(waveform, sample_rate, "docs/images/Testset/spec_sp05_station_sn0.png")
+
+    #waveform, sample_rate = torchaudio.load("Testset/noise/street_0dB/sp05_street_sn0.wav")
+    #plot_waveform(waveform, sample_rate, "docs/images/Testset/waveform_sp05_street_sn0.png")
+    #plot_specgram(waveform, sample_rate, "docs/images/Testset/spec_sp05_street_sn0.png")
+
+    #waveform, sample_rate = torchaudio.load("Testset/noise/train_0dB/sp05_train_sn0.wav")
+    #plot_waveform(waveform, sample_rate, "docs/images/Testset/waveform_sp05_train_sn0.png")
+    #plot_specgram(waveform, sample_rate, "docs/images/Testset/spec_sp05_train_sn0.png")
+
+    waveform, sample_rate = torchaudio.load("Testset/noise/airport_0dB/sp05_airport_sn0.wav")
+    plot_waveform(waveform, sample_rate, "docs/images/Testset/waveform_sp05_airport_sn0.png")
+    plot_specgram(waveform, sample_rate, "docs/images/Testset/spec_sp05_airport_sn0.png")
+
+    waveform, sample_rate = torchaudio.load("Testset/noisy/station/sp05_station_sn5.wav")
+    plot_waveform(waveform, sample_rate, "docs/images/Testset/waveform_sp05_station_sn5.png")
+    plot_specgram(waveform, sample_rate, "docs/images/Testset/spec_sp05_station_sn5.png")
+
+    waveform, sample_rate = torchaudio.load("Testset/noisy/station/sp05_station_sn10.wav")
+    plot_waveform(waveform, sample_rate, "docs/images/Testset/waveform_sp05_station_sn10.png")
+    plot_specgram(waveform, sample_rate, "docs/images/Testset/spec_sp05_station_sn10.png")
+
+    waveform, sample_rate = torchaudio.load("Testset/noisy/station/sp05_station_sn15.wav")
+    plot_waveform(waveform, sample_rate, "docs/images/Testset/waveform_sp05_station_sn15.png")
+    plot_specgram(waveform, sample_rate, "docs/images/Testset/spec_sp05_station_sn15.png")

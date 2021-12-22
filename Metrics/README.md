@@ -1,6 +1,6 @@
 ## Metrics
 
-These are some of the metrics implemented in this repository as well as tested out from various sources. Their usage has been demonstrated in the examples.py file. Listen to the [clean speech](https://github.com/skit-ai/woc-tts-enhancement/blob/main/docs/audio/sp15.mov) and the [distorted speech](https://github.com/skit-ai/woc-tts-enhancement/blob/main/docs/audio/sp15_station_sn5.mov) and this is how these metrics perform on this audio sample-
+These are some of the metrics implemented in this repository as well as tested out from various sources. Their usage has been demonstrated in the examples.py file. Listen to the [clean speech](https://github.com/skit-ai/woc-tts-enhancement/blob/main/docs/audio/sp15.wav) and the [distorted speech](https://github.com/skit-ai/woc-tts-enhancement/blob/main/docs/audio/sp15_station_sn5.wav) and this is how these metrics perform on this audio sample-
 
 ```python
 >>>import torchaudio

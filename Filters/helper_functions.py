@@ -18,7 +18,7 @@ class Helper_Functions:
     
     def Denormalize_01(self, x):
         # denormalize 
-        # SoundFile, Audiolab and Torchaudio returns floats between -1 and 1 (the convention for audio signals), they can be denormalized as welll
+        # SoundFile, Audiolab and Torchaudio returns floats between -1 and 1 (the convention for audio signals), they can be denormalized as well
         if x.dtype == 'int16':
             nb_bits = 16  # -> 16-bit wav files
         elif x.dtype == 'int32':

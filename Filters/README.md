@@ -12,7 +12,7 @@ In this section we explore the various traditional signal processing filters for
 
 ### Spectral Subtraction
 
-<img src="../docs/images/Filters/ss_filtered_audio_waveform.png" width="450"> <img src="../docs/images/Filters/ss_filtered_audio_waveform.png" width="450"> 
+<img src="../docs/images/Filters/ss_filtered_audio_waveform.png" width="450"> <img src="../docs/images/Filters/ss_filtered_spectrogram.png" width="450"> 
 
 ### Bayesian MMSE Filter
 
@@ -24,4 +24,4 @@ In this section we explore the various traditional signal processing filters for
 
 ### Weiner Filter
 
-<img src="../docs/images/Filters/wiener_filtered_audio_waveform.png" width="450"> <img src="../docs/images/Filters/wiener_filtered_audio_waveform.png" width="450"> 
+<img src="../docs/images/Filters/wiener_filtered_audio_waveform.png" width="450"> <img src="../docs/images/Filters/wiener_filtered_spectrogram.png" width="450"> 

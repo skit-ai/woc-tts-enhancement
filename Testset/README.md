@@ -8,7 +8,7 @@ We can visualize some audio samples in our testset by seeing the audio waveforms
 
 ## Clean audio
 
-<img src="../docs/images/Filters/clean_waveform_sp05.png" width="450"> <img src="../docs/images/Filters/clean_spec_sp05.png" width="450">
+<img src="../docs/images/Testset/clean_waveform_sp05.png" width="450"> <img src="../docs/images/Testset/clean_spec_sp05.png" width="450">
 
 ## Noise Event 
 
@@ -16,35 +16,35 @@ Let's see the effect of different noise classes on our clean audio(each of them 
 
 ### Babble
 
-<img src="../docs/images/Filters/waveform_sp05_babble_sn0.png" width="450"> <img src="../docs/images/Filters/spec_sp05_babble_sn0.png" width="450">
+<img src="../docs/images/Testset/waveform_sp05_babble_sn0.png" width="450"> <img src="../docs/images/Testset/spec_sp05_babble_sn0.png" width="450">
 
 ### Airport
 
-<img src="../docs/images/Filters/waveform_sp05_airport_sn0.png" width="450"> <img src="../docs/images/Filters/spec_sp05_airport_sn0.png" width="450">
+<img src="../docs/images/Testset/waveform_sp05_airport_sn0.png" width="450"> <img src="../docs/images/Testset/spec_sp05_airport_sn0.png" width="450">
 
 ### Exhibition
 
-<img src="../docs/images/Filters/waveform_sp05_exhibition_sn0.png" width="450"> <img src="../docs/images/Filters/spec_sp05_exhibition_sn0.png" width="450">
+<img src="../docs/images/Testset/waveform_sp05_exhibition_sn0.png" width="450"> <img src="../docs/images/Testset/spec_sp05_exhibition_sn0.png" width="450">
 
 ### Street
 
-<img src="../docs/images/Filters/waveform_sp05_street_sn0.png" width="450"> <img src="../docs/images/Filters/spec_sp05_street_sn0.png" width="450">
+<img src="../docs/images/Testset/waveform_sp05_street_sn0.png" width="450"> <img src="../docs/images/Testset/spec_sp05_street_sn0.png" width="450">
 
 ### Restaurant
 
-<img src="../docs/images/Filters/waveform_sp05_restaurant_sn0.png" width="450"> <img src="../docs/images/Filters/spec_sp05_restaurant_sn0.png" width="450">
+<img src="../docs/images/Testset/waveform_sp05_restaurant_sn0.png" width="450"> <img src="../docs/images/Testset/spec_sp05_restaurant_sn0.png" width="450">
 
 ### Car
 
-<img src="../docs/images/Filters/waveform_sp05_car_sn0.png" width="450"> <img src="../docs/images/Filters/spec_sp05_car_sn0.png" width="450">
+<img src="../docs/images/Testset/waveform_sp05_car_sn0.png" width="450"> <img src="../docs/images/Testset/spec_sp05_car_sn0.png" width="450">
 
 ### Train
 
-<img src="../docs/images/Filters/waveform_sp05_train_sn0.png" width="450"> <img src="../docs/images/Filters/spec_sp05_train_sn0.png" width="450">
+<img src="../docs/images/Testset/waveform_sp05_train_sn0.png" width="450"> <img src="../docs/images/Testset/spec_sp05_train_sn0.png" width="450">
 
 ### Station
 
-<img src="../docs/images/Filters/waveform_sp05_station_sn0.png" width="450"> <img src="../docs/images/Filters/spec_sp05_station_sn0.png" width="450">
+<img src="../docs/images/Testset/waveform_sp05_station_sn0.png" width="450"> <img src="../docs/images/Testset/spec_sp05_station_sn0.png" width="450">
 
 ## SNR Ratios
 
@@ -52,12 +52,12 @@ Let's us now view the same audio sample recorded within the same noise class (st
 
 ### SNR = 5 
 
-<img src="../docs/images/Filters/waveform_sp05_station_sn5.png" width="450"> <img src="../docs/images/Filters/spec_sp05_station_sn5.png" width="450">
+<img src="../docs/images/Testset/waveform_sp05_station_sn5.png" width="450"> <img src="../docs/images/Testset/spec_sp05_station_sn5.png" width="450">
 
 ### SNR = 10
 
-<img src="../docs/images/Filters/waveform_sp05_station_sn10.png" width="450"> <img src="../docs/images/Filters/spec_sp05_station_sn10.png" width="450">
+<img src="../docs/images/Testset/waveform_sp05_station_sn10.png" width="450"> <img src="../docs/images/Testset/spec_sp05_station_sn10.png" width="450">
 
 ### SNR = 15
 
-<img src="../docs/images/Filters/waveform_sp05_station_sn15.png" width="450"> <img src="../docs/images/Filters/spec_sp05_station_sn15.png" width="450">
+<img src="../docs/images/Testset/waveform_sp05_station_sn15.png" width="450"> <img src="../docs/images/Testset/spec_sp05_station_sn15.png" width="450">

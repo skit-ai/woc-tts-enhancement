@@ -4,24 +4,24 @@ In this section we explore the various traditional signal processing filters for
 
 ### Clean Audio Sample
 
-<img src="docs/images/Filters/clean_audio_waveform.png" width="450"> <img src="docs/images/Filters/clean_audio_spectrogram.png" width="450">
+<img src="../docs/images/Filters/clean_audio_waveform.png" width="450"> <img src="../docs/images/Filters/clean_audio_spectrogram.png" width="450">
 
 ### Noisy Audio Sample (SNR = 15)
 
-<img src="docs/images/Filters/noisy_audio_waveform.png" width="450"> <img src="docs/images/Filters/noisy_audio_spectrogram.png" width="450">
+<img src="../docs/images/Filters/noisy_audio_waveform.png" width="450"> <img src="../docs/images/Filters/noisy_audio_spectrogram.png" width="450">
 
 ### Spectral Subtraction
 
-<img src="docs/images/Filters/ss_filtered_audio_waveform.png" width="450"> <img src="docs/images/Filters/ss_filtered_audio_waveform.png" width="450"> 
+<img src="../docs/images/Filters/ss_filtered_audio_waveform.png" width="450"> <img src="../docs/images/Filters/ss_filtered_audio_waveform.png" width="450"> 
 
 ### Bayesian MMSE Filter
 
-<img src="docs/images/Filters/mmse_filtered_audio_waveform.png" width="450"> <img src="docs/images/Filters/mmse_filtered_spectrogram.png" width="450"> 
+<img src="../docs/images/Filters/mmse_filtered_audio_waveform.png" width="450"> <img src="../docs/images/Filters/mmse_filtered_spectrogram.png" width="450"> 
 
 ### Bayesian Log MMSE Filter
 
-<img src="docs/images/Filters/mmse_log_filtered_audio_waveform.png" width="450"> <img src="docs/images/Filters/mmse_log_filtered_spectrogram.png" width="450">
+<img src="../docs/images/Filters/mmse_log_filtered_audio_waveform.png" width="450"> <img src="../docs/images/Filters/mmse_log_filtered_spectrogram.png" width="450">
 
 ### Weiner Filter
 
-<img src="docs/images/Filters/wiener_filtered_audio_waveform.png" width="450"> <img src="docs/images/Filters/wiener_filtered_audio_waveform.png" width="450"> 
+<img src="../docs/images/Filters/wiener_filtered_audio_waveform.png" width="450"> <img src="../docs/images/Filters/wiener_filtered_audio_waveform.png" width="450"> 

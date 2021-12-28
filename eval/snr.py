@@ -1,6 +1,7 @@
+import torchaudio
 import numpy as np
 
-def wada_snr(wav):
+def wada_snr(path):
     # Direct blind estimation of the SNR of a speech signal.
     #
     # Paper on WADA SNR:
@@ -10,6 +11,7 @@ def wada_snr(wav):
     #   https://labrosa.ee.columbia.edu/projects/snreval/#9
 
     # init
+    wav, sr = torchaudio.load(path)
     eps = 1e-10
     # next 2 lines define a fancy curve derived from a gamma distribution -- see paper
     db_vals = np.arange(-20, 101)
@@ -49,5 +51,13 @@ def wada_snr(wav):
     dNoiseEng = dEng / (1 + dFactor) # Noise energy
     dSigEng = dEng * dFactor / (1 + dFactor) # Signal energy
     snr = 10 * np.log10(dSigEng / dNoiseEng)
+    snr = snr[~np.isnan(snr)]
+    mean_snr = sum(snr)/len(snr)
 
-    return snr
+    return mean_snr
+
+if __name__ == "__main__":
+    path1 = "../Dataset/noisy/station_5dB/sp15_station_sn5.wav"
+    path2 = "../docs/audio/kalman_filtered_sp15_station_sn5.wav"
+    print(wada_snr(path1))
+    print(wada_snr(path2))

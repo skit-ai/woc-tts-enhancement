@@ -49,7 +49,7 @@ class Kalman(object):
         filtered = []
 
         for z in x:
-            filtered.append(np.dot(H,  self.predict())[0])
+            filtered.append(np.dot(self.H,  self.predict())[0])
             self.update(z)
         
         wf = wave.open(path2, 'wb')

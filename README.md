@@ -20,7 +20,7 @@ This uses traditional analytical filters which remove noise, either by assuming 
 
 We implemented and tested the following methods-
 
-- Kalman Filter]
+- Kalman Filter
 - Wiener Filter
 - Oversubtraction/ Spectral Flooring
 - Bayesian MMSE Filter

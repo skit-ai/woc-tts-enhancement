@@ -219,9 +219,10 @@ class MMSE:
         wf.close()
 
 if __name__ == "__main__":
-    path1 = "../Testset/noisy/station/sp15_station_sn5.wav"
+    path1 = "../docs/audio/station/sp15_station_sn5.wav"
     path2 = "../docs/audio/MMSE_Log_filtered_sp15_station_sn5.wav"
     path3 = "../docs/audio/MMSE_filtered_sp15_station_sn5.wav"
     mmse_filter = MMSE()
     mmse_filter.MMSE_Log_path(path1, path2)
     mmse_filter.MMSE_path(path1, path3)
+    print("Audio denoised!")

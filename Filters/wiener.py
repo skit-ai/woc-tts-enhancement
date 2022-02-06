@@ -1,9 +1,6 @@
 import numpy as np
 import wave
 
-
-# Implemented with the help of: https://github.com/vipchengrui/traditional-speech-enhancement/blob/master/wiener_filtering/wiener_filtering_phase.py
-
 def get_mel(SNR, mel_max=10):
     s = 25 / (mel_max - 1)
     mel_0 = (1 + 4 * mel_max) / 5
@@ -25,7 +22,7 @@ class Wiener:
         self.mel_max = mel_max
     
     def Wiener_path(self, path1, path2):
-
+        # # Implemented with the help of: https://github.com/vipchengrui/traditional-speech-enhancement/blob/master/wiener_filtering/wiener_filtering_phase.py
         # input wave file 
         f = wave.open(path1)
 

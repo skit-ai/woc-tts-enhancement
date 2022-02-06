@@ -62,7 +62,7 @@ class Kalman(object):
         wf.close()
 
 if __name__ == '__main__':
-    path1 = "../Testset/noisy/station/sp15_station_sn5.wav"
+    path1 = "../docs/audio/sp15_station_sn5.wav"
     path2 = "../docs/audio/kalman_filtered_sp15_station_sn5.wav"
     dt = 1.0/60
     
@@ -73,3 +73,4 @@ if __name__ == '__main__':
     
     kalman_filter = Kalman(F = F, H = H, R = R, Q = Q)
     kalman_filter.Kalman_path(path1, path2)
+    print("Audio denoised!")

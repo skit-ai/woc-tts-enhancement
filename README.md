@@ -47,3 +47,13 @@ We implement and test the following metrics-
 These filter methods work really well on the NOIZEUS dataset, however they are not the best when it comes to TTS models. The results of applying the filters on the NOIZUES as well as the TTS dataset has been discussed in detail [here](https://docs.google.com/presentation/d/12zHLefbkZoakgsf8_EFHNvmXPyeizbsL/edit?usp=sharing&ouid=103201416325155759704&rtpof=true&sd=true). Hence we need to resort to deep learning methods! 
 
 This repo can be used for real life speech denoisement purposes. Most importantly, it provides implementations of crucial metrics which can be used for measuring the amount of distortion/clarity of the speech.
+
+## Installation
+
+To install simply clone the repository and install the requirements
+
+```
+git clone https://github.com/skit-ai/woc-tts-enhancement
+cd woc-tts-enhancement
+pip install -r requirements.txt
+```

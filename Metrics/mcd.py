@@ -153,8 +153,8 @@ class MCD:
     
 
 if __name__ == "__main__":
-    path1 = "../Testset/clean/sp01.wav"
-    path2 = "../Testset/noisy/babble/sp01_babble_sn10.wav"
+    path1 = "../docs/audio/sp15.wav"
+    path2 = "../docs/noisy/sp15_station_sn5.wav"
 
     mcd = MCD(22050)
 

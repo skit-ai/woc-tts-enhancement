@@ -57,8 +57,8 @@ class GPE:
         return voiced_frames & pitch_error_frames
 
 if __name__ == "__main__":
-    path1 = "../Testset/clean/sp01.wav"
-    path2 = "../Testset/noisy/babble/sp01_babble_sn10.wav"
+    path1 = "../docs/audio/sp15.wav"
+    path2 = "../docs/noisy/sp15_station_sn5.wav"
 
     gpe = GPE(22050)
     print(gpe.calculate_gpe_path(path1, path2))
